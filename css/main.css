@@ -49,6 +49,7 @@ nav {
 }
 
 nav ul {
+  font-size: 1.125rem;
   padding: 0;
   margin: 0;
 }
@@ -69,13 +70,15 @@ nav a {
   padding: 0;
   font-size: 1.125rem;
   font-weight: normal;
+  white-space: nowrap;
 }
 
 nav li:hover {
   background-color: #6c8fe0;
 }
 
-nav li:hover a {
+nav a:hover {
+  background-color: #6c8fe0;
   color: #fff;
 }
 
@@ -90,12 +93,13 @@ nav li:hover a {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-}
+  }
 
   nav li {
     width: 50%;
     justify-content: center;
   }
+
 }
 
 @media only screen and (min-width: 38em) {
@@ -111,11 +115,36 @@ nav li:hover a {
 
 }
 
-  @media only screen and (min-width: 60em) {
+@media only screen and (min-width: 60em) {
 
   html {
     font-size: 120%;
     line-height: 1.5;
+  }
+
+  header {
+    flex-wrap: nowrap;
+    text-align: left;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header h1 {
+    margin: .9rem;
+    padding: 0;
+    width: auto;
+    white-space: nowrap;
+  }
+
+  header nav {
+    padding: 5px;
+    width: auto;
+    text-align: right;
+  }
+
+  nav li {
+    width: auto;
+    padding: 0 .75rem;
   }
 
 }
