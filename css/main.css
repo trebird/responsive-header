@@ -34,7 +34,7 @@ header {
 
 header h1 {
   margin: .9rem auto;
-  padding: 5px;
+  padding-top: 5px;
   width: 100%;
   font-size: 2rem;
   font-weight: bold;
@@ -113,7 +113,21 @@ nav li:hover a {
 
   @media only screen and (min-width: 60em) {
 
-    html {
-      font-size: 120%;
-      line-height: 1.5;
-    }
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
+  }
+
+  body {
+    display: flex;
+  }
+
+}
